@@ -1,182 +1,42 @@
-{
-  "startingRoom": "AcrossTheCastle",
-  "endingRoom": "TopOfTheCastle",
-  "player": {
-    "name": "CS Kid",
-    "attack": 10.0,
-    "defense": 35.0,
-    "health": 100.0,
-    "level": 0
-  },
-  "monsters": [
-    {
-      "name": "vampire",
-      "attack": 5.0,
-      "defense": 5.0,
-      "health": 20.0
-    },
-    {
-      "name": "zombie",
-      "attack": 2.5,
-      "defense": 100.0,
-      "health": 10.0
-    },
-    {
-      "name": "dragon",
-      "attack": 130,
-      "defense": 50.0,
-      "health": 300.0
-    },
-    {
-      "name": "Johnny",
-      "attack": 13000,
-      "defense": 5000,
-      "health": 30000
-    }
-  ],
-  "rooms": [
-    {
-      "name": "AcrossTheCastle",
-      "description": "You are outside of the Magical Castle that is surrounded by water",
-      "items": [
-        {
-          "name": "wet gun",
-          "damage": 10
-        },
-        {
-          "name": "gun",
-          "damage": 20
-        }
-      ],
-      "monstersInRoom": ["vampire", "dragon"],
-      "directions": [
-        {
-          "directionName": "North",
-          "room": "CastleEntrance"
-        }
-      ],
-      "actions": ["swim"]
-    },
-    {
-      "name": "CastleEntrance",
-      "description": "You are in front of the entry of the Castle.  You see a stone road in a beautiful pattern.",
-      "items": [
-        {
-          "name": "rusty sword",
-          "damage": 5
-        }
-      ],
-      "monstersInRoom": ["zombie", "vampire"],
-      "directions": [
-        {
-          "directionName": "North",
-          "room": "MainHall"
-        },
-        {
-          "directionName": "South",
-          "room": "AcrossTheCastle"
-        }
-      ],
-      "actions": ["skip"]
-    },
-    {
-      "name": "MainHall",
-      "description": "You are in the main hall of the Castle.  There are lots of guards standing in the hall.",
-      "items": [
-        {
-          "name": "excalibur",
-          "damage": 30
-        }
-      ],
-      "directions": [
-        {
-          "directionName": "South",
-          "room": "CastleEntrance"
-        },
-        {
-          "directionName": "West",
-          "room": "Attic"
-        },
-        {
-          "directionName": "North",
-          "room": "SwimmingPool"
-        }
-      ]
-    },
-    {
-      "name": "SwimmingPool",
-      "description": "You are in the swimming pool.  You see a zombie enjoying the water.",
-      "monstersInRoom": ["zombie"],
-      "directions": [
-        {
-          "directionName": "South",
-          "room": "MainHall"
-        }
-      ],
-      "actions": ["swim"]
-    },
-    {
-      "name": "Attic",
-      "description": "You are in the attic.  There seems to be magical items.",
-      "items": [
-        {
-          "name": "magic wand",
-          "damage": 20
-        }
-      ],
-      "directions": [
-        {
-          "directionName": "West",
-          "room": "CastleWestHallway"
-        }
-      ]
-    },
-    {
-      "name": "CastleWestHallway",
-      "description": "You are in the west hallway.  You can see the attic and a suspicious room.",
-      "directions": [
-        {
-          "directionName": "East",
-          "room": "Attic"
-        },
-        {
-          "directionName": "South",
-          "room": "SuspiciousRoom"
-        }
-      ],
-      "actions": ["go"]
-    },
-    {
-      "name": "SuspiciousRoom",
-      "description": "You are in a suspicious room.  It seems like the Castle is hiding something.",
-      "monstersInRoom": ["Johnny"],
-      "items": [
-        {
-          "name": "machine gun",
-          "damage": 50
-        }
-      ],
-      "directions": [
-        {
-          "directionName": "Up",
-          "room": "TopOfTheCastle"
-        },
-        {
-          "directionName": "North",
-          "room": "CastleWestHallway"
-        }
-      ],
-      "actions": ["go", "run"]
-    },
-    {
-      "name": "TopOfTheCastle",
-      "description": "You are at the top of the Castle.  You have conquered it!",
-      "directions": [
-        {
-          "directionName": "Down",
-          "room": "SuspiciousRoom"
-        }
-      ]
-    }
-  ]
-}
+<!DOCTYPE html>
+
+<!--  ********************************************************************
+      Website        by H Lee        DEC 2017
+      The JavaScript script contained in this file
+      ********************************************************************  -->
+
+<html>
+  <body style="background-color:#FFFAFA;">
+  </body>
+  <head> 
+    <meta charset = 'utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <!-- Navigation Bar from https://www.w3schools.com/howto/howto_website.asp-->
+    <nav class="w3-bar w3-black">
+      <a href="#home" class="w3-button w3-bar-item">About Me</a>
+      <a href="https://www.linkedin.com/in/makeyousmile/" class="w3-button w3-bar-item">LinkedIn</a>
+      <a href="https://github.com/wanttomakeyousmile" class="w3-button w3-bar-item">GitHub</a>
+      <a href="https://drive.google.com/uc?export=download&id=1tDFD5bH0eXTOWCY31Z5ISORlAfjS7HjJ" class="w3-button w3-bar-item">Resume</a>
+    </nav>
+    <style>
+      h1 {
+        font-size: 300%;
+        Font-family: arial;
+        text-align:center;
+      } 
+      p {
+        font-size: 160%;
+        Font-family: times;
+        text-align:center;
+      }
+    </style>
+
+  <body>
+    <center><img src="https://i.imgur.com/jqSoofz.jpg"  style="width:400px"></center>
+    <h1>Hyunsoo Lee</h1>
+    <p>University of Illinois at Urbana-Champaign Class of 2021</p>
+    <p>I am Hyunsoo Lee majoring in Statistics and Computer Science. I am interested in data analytics and visualization.</p>
+    <p>Contact me through my email: hyunsoo2@illinois.edu</p>
+  </body>
+</html>
